@@ -1,21 +1,18 @@
+server:
+  port: 8761
+
 spring:
   application:
     name: eureka
-#  cloud:
-#    config:
-#      enabled: false
-server:
-  port: 8761
-management:
-  endpoint:
-    health:
-      show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  info:
-    env:
-      enabled: true
-message: Estoy en  eureka
 
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    registry-fetch-interval-seconds: 5
+    healthcheck:
+      enabled: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
