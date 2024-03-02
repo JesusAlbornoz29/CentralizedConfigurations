@@ -7,8 +7,8 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3366/movie-dev
-    username: usr-music
-    password: pwd-music
+    username: usr-movie
+    password: pwd-movie
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
