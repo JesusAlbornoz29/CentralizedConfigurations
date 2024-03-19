@@ -41,7 +41,7 @@ resilience4j:
     #  Lo que vemos en el retry es cuanto tiempo queremos esperar entre cada uno de los reintentos
     retry:
       instances:
-        students:
+        movie:
           waitDuration: 1000
           #        Le decimos la cantidad de reintentos que queremos hacer
           maxAttempts: 3
