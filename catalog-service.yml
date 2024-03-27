@@ -7,6 +7,14 @@ spring:
     enabled: true
   application:
     name: catalog-service
+  mongodb:
+    embedded:
+      version: 7.0.7
+  data:
+    mongodb:
+      database: test
+      port: 27017
+
 
 eureka:
   client:
